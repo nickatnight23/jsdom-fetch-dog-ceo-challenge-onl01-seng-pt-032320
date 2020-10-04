@@ -56,8 +56,8 @@ document.addEventListener("DOMContentLoaded",  makeFetch)
     
   }
   
-  let newMessage = document.querySelector('#dog-breeds')
-  console.log("newMessage", newMessage)
+  let ul = document.querySelector('#dog-breeds')
+  console.log("ul", ul)
 
   function addMessages(msg){
     console.log(msg)
@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded",  makeFetch)
       console.log("msg",msg)
     })
 
-    let ul = document.createElement("ul")
+    let ul = document.createElement("li")
 
     console.log(json.message)
   }
