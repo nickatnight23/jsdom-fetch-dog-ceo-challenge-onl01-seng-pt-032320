@@ -50,4 +50,23 @@ document.addEventListener("DOMContentLoaded",  makeFetch)
     .then(function(response){
       return response.json();
       
-  })
+  }) .then(json => {
+    console.log( "message", json.message)
+    })
+    
+  }
+  
+  let newMessage = document.querySelector('#dog-breeds')
+  console.log("newMessage", newMessage)
+
+  function addMessages(msg){
+    console.log(msg)
+
+    const note = msg.forEach(msg =>{
+      console.log("msg",msg)
+    })
+
+    let ul = document.createElement("ul")
+
+    console.log(json.message)
+  }
